@@ -1,0 +1,35 @@
+ 
+Fusion model: mod_effb4 + "Clinical-T5-Base"
+ 
+  | Name       | Type              | Params
+-------------------------------------------------
+0 | conv_block | Sequential        | 3.2 M 
+1 | adaptive   | AdaptiveAvgPool2d | 0     
+2 | fc         | Sequential        | 656 K 
+3 | criterion  | NLLLoss           | 0     
+-------------------------------------------------
+3.9 M     Trainable params
+0         Non-trainable params
+3.9 M     Total params
+15.484    Total estimated model params size (MB)
+
+
+Fusion model: resnet 1 + "Clinical-T5-Base"
+
+  | Name      | Type       | Params
+-----------------------------------------
+0 | fc        | Sequential | 453 K 
+1 | criterion | NLLLoss    | 0     
+-----------------------------------------
+453 K     Trainable params
+0         Non-trainable params
+453 K     Total params
+1.814     Total estimated model params size (MB)
+
+
+
+Model: mod_effb4 
+
+
+
+Model: "Clinical-T5-Base"
